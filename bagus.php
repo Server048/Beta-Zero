@@ -15,7 +15,7 @@ header("Access-Control-Max-Age: 3600");
 //$myheader = $_SERVER['HTTP_XXXXXX_XXXX'];
   
 // get posted data
-$data = json_decode(file_get_contents("php://input"));
+$data = json_decode(file_get_contents("bagus.php"));
   
 // make sure json data is not incomplete
 if(
@@ -52,7 +52,9 @@ if(
 
 	// send one or multiple replies to AutoResponder
 	echo json_encode(array("replies" => array(
-		array("message" => "Bagus Hay " . $sender . "!\nThanks for sending: " . $day_of_year),
+		array("message" => "Bagus \nThanks for sending: " . $day_of_year),
+		array("message" => "Success ✅")
+		array("message" => "Success ✅")
 		array("message" => "Success ✅")
 	)));
 	

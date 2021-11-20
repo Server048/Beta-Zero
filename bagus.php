@@ -52,7 +52,7 @@ if(
 
 	// send one or multiple replies to AutoResponder
 	echo json_encode(array("replies" => array(
-		array("message" => "Hey " . $sender . "!\nThanks for sending: " . $message),
+		array("message" => "Bagus Hay " . $sender . "!\nThanks for sending: " . $day_of_year),
 		array("message" => "Success ✅")
 	)));
 	
@@ -68,8 +68,8 @@ else{
 	
 	// send error
 	echo json_encode(array("replies" => array(
-		array("message" => "Error ❌"),
-		array("message" => "JSON data is incomplete. Was the request sent by AutoResponder?")
+		array("message" => "Web Server By Yuki"),
+		array("message" => "Welcome To Server \nThanks For Join")
 	)));
 }
 ?>
